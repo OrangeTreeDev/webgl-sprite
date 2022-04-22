@@ -1,0 +1,41 @@
+{
+  "name": "webgl-sprite",
+  "version": "1.0.0",
+  "description": "webgl-sprite",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "eslint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run test && npm run eslint",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add .",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrangeTreeDev/webgl-sprite.git"
+  },
+  "keywords": [],
+  "author": "sunlixiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OrangeTreeDev/webgl-sprite/issues"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "homepage": "https://github.com/OrangeTreeDev/webgl-sprite#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.13.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  }
+}
