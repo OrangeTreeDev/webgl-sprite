@@ -1,5 +1,6 @@
 webgl-sprite是一个图像库，提供了图像编辑、绘制、滤镜、截屏功能。使用webgl-sprite，即使你不了解WebGL，也可以收益WebGL带来的性能优势。
 
+![yuque_diagram](https://user-images.githubusercontent.com/24699644/195777450-1ddad392-13cf-4c89-8c06-c934ebbca0bc.png)
 
 
 # 使用
